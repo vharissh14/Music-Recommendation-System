@@ -1,0 +1,40 @@
+ <div class="container">
+  <div class="jumbotron">
+  <h2 align="center"><%= @articles.name %></h2>
+  <div class="row">
+  <div class="col-md-6">
+  <br>
+    <h3>Album</h3>
+    <h4><%= @articles.album %></h4>
+  <h3>Bit Rate</h3>
+      <h4><%= @bit_rate %> kbps</h4>
+  <h3>File Size</h3>
+      <h4><%= @file_size %> MB</h4>
+  <h3>Year</h3>
+      <h4><%= @yr %></h4>
+   </div>
+   <div align="right" class="col-md-6">
+   <br>
+  <h3>Song ID</h3>
+    <h4><%= @articles.sid %></h4>
+  <h3>Duration</h3>
+    <h4><%= @articles.duration %></h4>
+  <h3>Composer</h3>
+    <h4><%= @composer %></h4>
+  <h3>Genere</h3>
+    <h4><%= @genere %></h4>
+  <br>
+  </div>
+  </div>
+<div align="center">
+<audio controls>
+  <source src="/Songs1/<%= @articles.name %>" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</div>
+<style type="text/css">
+ h2, h3 {
+    color: #0091ea;
+  }
+</style>

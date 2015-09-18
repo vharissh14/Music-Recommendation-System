@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="jumbotron">
+      <%= form_tag("/music/api", :method=>"post") do %>
+        <form class="form-horizontal">
+        <legend>Sign Up</legend>
+        <div class="form-group">
+          <label for="inputName" class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-10">
+                <input type="name" name="name" class="form-control" id="inputName" placeholder="Name">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+          <div class="col-lg-10">
+                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+          <%= submit_tag("submit", :class=>"btn btn-primary") %>
+        </div>
+        </form>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-lg-6">
+    <div class="jumbotron">
+    <legend>API USAGE</legend>
+      <h4>curl http://localhost:3000/api/products -I</h4>
+    </div>
+    </div>
+  </div>
+</div>

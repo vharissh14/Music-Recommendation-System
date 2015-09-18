@@ -1,0 +1,35 @@
+<div class="container">
+    <div align="center">
+        <div class="form-group">
+	       <%= form_tag("/music/demo", :method=>"post") do %>
+              <div class="col-lg-5" style="float: inherit !important;">
+                    <input type="text" class="form-control floating-label" placeholder="Enter userID" name="todo_text">
+              </div>
+              <%= submit_tag("submit", :class=>"btn btn-primary") %>
+	       <% end %>
+          </div>
+      </div>
+
+<br>
+<br>
+
+<div class="jumbotron">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Song ID</th>
+      <th>Song Name</th>
+      <th colspan="3">Play</th>
+    </tr>
+  </thead>
+  <% @articles.take(4).each do |post| %>
+      <tr>
+        <td><%= post.sid %></td>
+        <td><%= post.name %></td>
+        <td><%= link_to '<i class="fa fa-play-circle-o fa-2x"></i>'.html_safe, detail_path(post.id)%></td>
+      </tr>
+    <% end %>
+</table>
+</div>
+</div>
+

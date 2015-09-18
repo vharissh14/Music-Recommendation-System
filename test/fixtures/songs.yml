@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: 1
+  sid: 1
+  name: MyText
+  format: MyText
+  file_size: 1
+  bit_rate: 1
+  album: MyText
+  composer: MyText
+  genere: MyText
+  year: 1
+  duration: 2015-09-14 22:49:40
+
+two:
+  uid: 1
+  sid: 1
+  name: MyText
+  format: MyText
+  file_size: 1
+  bit_rate: 1
+  album: MyText
+  composer: MyText
+  genere: MyText
+  year: 1
+  duration: 2015-09-14 22:49:40
